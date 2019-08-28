@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     font-family: arial, sans serif;
 }
 
@@ -9,14 +9,15 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 5;
 }
 
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     overflow: hidden;
-    background-color: #E37222;
+    background-color: #3A75BB;
 }
 
 li {
@@ -29,7 +30,7 @@ a:visited {
     display: block;
     color: #252424;
     text-align: center;
-    padding: 16px;
+    padding: 15px;
     font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     font-weight: 700;
     text-transform: uppercase;
@@ -50,60 +51,174 @@ li a:active {
     color: rgb(20, 19, 19);
     font-weight: 700;
 } */
-
 #home,
-#about,
+#course_info,
+#course_policy,
 #assignments,
 #lectures,
-#policy,
 #support {
-    height: 100vh;
-    padding-top: 50px;
+    height: auto;
+    /* padding-top: 50px; */
 }
 
 #home {
-    background-color: #ef7b7b;
+    color: #e9e9e9;
+    background: #FFB53F;
+
 }
 
-#about {
-    background-color: #fcf3ca;
+#course_info {
+    background-color: #e9e9e9;
+}
+
+#course_policy {
+    background-color: #e9e9e9;
 }
 
 #assignments {
-    background-color: #c4eada;
+    background-color: #e9e9e9;
 }
 
 #lectures {
-    background-color: #c4eada;
+    background-color: #e9e9e9;
 }
 
 #support {
-    background-color: #fcf3ca;
-}
-
-#policy {
-    background-color: #c4eada;
-}
-
-h1 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    font-size: 1.5rem;
-    color: #0a0a0a;
-    padding-left: 20px;
+    background-color: #e9e9e9;
 }
 
 .page {
     width: 100%;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 100px;
+    /* padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px; */
+    height: 0px;
     background-color: #ccc;
-    border-radius: 0px;
-    border-style: solid;
-    border-width: 1px 0 0px 0px;
 }
+
+.floating-page-header {
+    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #363a3d;
+    font-size: 10px; 
+    font-style: normal; 
+    font-variant: normal; 
+    line-height: 9.9px; 
+    text-transform: uppercase;
+    line-height: 30px;
+    font-size: 30px;
+    /* padding-left: 10px; */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 150px;
+    z-index: 3;
+
+  }
+
+
+  #home_heading {
+    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #363a3d;
+    font-style: normal; 
+    font-variant: normal; 
+    line-height: 36px; 
+    text-transform: uppercase;
+    font-size: 50px;
+    /* padding-left: 10px; */
+    text-align: center;
+    top: 150px;
+    z-index: 3;
+
+  }
+
+
+  #home_heading_b {
+    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #363a3d;
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: uppercase;
+    line-height: 20px; 
+    font-size: 25px;
+    /* padding-left: 10px; */
+    text-align: center;
+    z-index: 3;
+
+  }
+
+
+  p{
+    color: #222222;
+  }
+
+ *{
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .left_column {
+    float: left;
+    width: 20%;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    
+  }
+
+  .right_column {
+    float: left;
+    width: 80%;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    
+  }
+
+  .left_column_home {
+    float: left;
+    width: 0%;
+
+    
+  }
+
+  .center_column {
+    float: left;
+    width: 100%;
+    padding-top: 100px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    
+  }
+  
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .left_column {
+        float: left;
+        width: 100%;
+        /* padding: 30px; */
+
+    }
+    
+    .right_column {
+        float: left;
+        width: 100%;
+        /* padding: 20px; */
+    }
+  }

@@ -35,3 +35,11 @@ $(document).ready(function() {
 
     });
 });
+
+// $(window).on('resize', function(){
+//     var win = $(this); //this = window
+//     console.log("Resized");
+//     // if (win.height() >= 820)
+//     // if (win.width() >= 1280)
+    
+// });
